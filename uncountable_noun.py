@@ -1,0 +1,18 @@
+dict_uncountable_noun={"काफी"	:'Uncountable_N',
+"केवल"	:'Uncountable_N',
+"करीब"	:'Uncountable_N',
+"कम"	:'Uncountable_N',
+"बहुत"	:'Uncountable_N',
+"खूब"	:'Uncountable_N',
+"बिल्कुल"	:'Uncountable_N',
+"करीब"	:'Uncountable_N',
+"सब"	:'Uncountable_N',
+"एकदम"	:'Uncountable_N',
+"ठिक"	:'Uncountable_N',
+"मात्र"	:'Uncountable_N',
+"सबसे"	:'Uncountable_N',
+"सर्वाधिक"	:'Uncountable_N',
+"ज्‍यादा":'Uncountable_N',
+"सबको":'Uncountable_N',
+
+}
