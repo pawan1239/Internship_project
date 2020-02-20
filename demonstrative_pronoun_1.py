@@ -1,0 +1,21 @@
+dict_demonstrative_pronoun_1={"यह"	:'Pronoun',
+"वह"	:'Pronoun',
+"वे"	:'Pronoun',
+"ये"	:'Pronoun',
+"इस"	:'Pronoun',
+"उस"	:'Pronoun',
+"इन"	:'Pronoun',
+"उन"	:'Pronoun',
+"यह"	:'Pronoun',
+"ये"	:'Pronoun',
+"इसका"	:'Pronoun',
+"इसे"	:'Pronoun',
+"इसके"	:'Pronoun',
+"उसने "	:'Pronoun',
+"उसे"	:'Pronoun',
+"उसके"	:'Pronoun',
+"उन्होंने"	:'Pronoun',
+"उन्हें"	:'Pronoun',
+"वह"	:'Pronoun'
+
+}

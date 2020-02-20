@@ -31,6 +31,9 @@ import state_noun_1
 import place_noun_1
 import district_noun_1
 import uncountable_noun_1
+import verbal_noun_1
+import demonstrative_pronoun_1
+import possessive_pronoun_1
 flag_2=0
 for two_level in range(0,2):
     res_individual_testing_six=''
@@ -175,10 +178,10 @@ for two_level in range(0,2):
                     l.append(token[k])
                     l.append('/')
                     l.append(adjective.dict_adjective[token[k]])
-                elif token[k] in demonstrative_pronoun.dict_demonstrative_pronoun.keys():
+                elif token[k] in demonstrative_pronoun_1.dict_demonstrative_pronoun_1.keys():
                     l.append(token[k])
                     l.append('/')
-                    l.append(demonstrative_pronoun.dict_demonstrative_pronoun[token[k]])
+                    l.append(demonstrative_pronoun_1.dict_demonstrative_pronoun_1[token[k]])
                 elif token[k] in determiner.dict_determiner.keys():
                     l.append(token[k])
                     l.append('/')
@@ -231,10 +234,10 @@ for two_level in range(0,2):
                     l.append(token[k])
                     l.append('/')
                     l.append(conjunct.dict_conjunct[token[k]])
-                elif token[k] in verbal_noun.dict_verbal_noun.keys():
+                elif token[k] in verbal_noun_1.dict_verbal_noun_1.keys():
                     l.append(token[k])
                     l.append('/')
-                    l.append(verbal_noun.dict_verbal_noun[token[k]])
+                    l.append(verbal_noun_1.dict_verbal_noun_1[token[k]])
                 elif token[k] in date_month_noun.dict_date_month_noun.keys():
                     l.append(token[k])
                     l.append('/')
@@ -448,7 +451,7 @@ for two_level in range(0,2):
 
     #if r2=='ता' or r2_three=='रें'or r2_three=='लें' or r2_one==u'\u094B' or r2=='ना' or r2=='ते' or r2_one=='ए' or r2=='एं' or r2=='या'  or r2=='ईं' or r2=='थी' or r2=='ले' or r2=='हे' or r2_one=='ी' or r2=='खो' or r2=='है' or r2=='का' or r2_one=='ए' or r2_one=='ा' or r2=='गी' or r2=='गा' or r2=='ये' or r2=='आ' or r2_one=='ओ' or r2_one=='ई' or r2=='खा' or r2=='ए' or r2=='गे' or r2=='ये':
         if 0 <= x2_one < x1:
-            if l[element_length_2*3+2]!='QW' and l[element_length_2*3+2]!='Preposition' and l[element_length_2*3+2]!='NEG'  and l[element_length_2*3+2]!='Pronoun' and l[element_length_2*3+2]!='Demonstrative_Pro': # and l[element_length_2*3+2]!='JJ' and l[element_length_2*3+2]!='ordinal_number' and l[element_length_2*3+2]!='Adverb' and l[element_length_2*3+2]!='Preposition'and l[element_length_2*3+2]!='N' :
+            if (l[element_length_2*3+2]!='QW'  and l[element_length_2*3+2]!='Preposition' and l[element_length_2*3+2]!='NEG'  and l[element_length_2*3+2]!='Pronoun' and l[element_length_2*3+2]!='Demonstrative_Pro') or  l[element_length_2*3]=='की' or  l[element_length_2*3]=='का': # and l[element_length_2*3+2]!='JJ' and l[element_length_2*3+2]!='ordinal_number' and l[element_length_2*3+2]!='Adverb' and l[element_length_2*3+2]!='Preposition'and l[element_length_2*3+2]!='N' :
                 l[element_length_2*3+2]='VB'
         n3=len(l_char_3)-1
         if n3>=1:
@@ -482,7 +485,7 @@ for two_level in range(0,2):
                 len_conjunct=len(l_char_5)-1
                 r5_cj=l_char_5[len_conjunct-1]+l_char_5[len_conjunct]
                 r5_cj_one=l_char_5[len_conjunct]
-                if r5_cj== 'ता' or r5_cj=='ते' or r5_cj == 'या' or r5_cj == 'ईं' or r5_cj == 'थी' or r5_cj == 'ले' or r5_cj == 'हे' or r5_cj_one == 'ी' or r5_cj == 'खो' or r5_cj == 'है' or r5_cj == 'का' or r5_cj_one == 'ए' or r5_cj_one == 'ा' or r5_cj == 'गी' or r5_cj_one == 'गा' or r5_cj == 'ये' or r5_cj == 'आ' or r5_cj_one== 'ओ' or r5_cj_one == 'ई' or r5_cj == 'खा' or r5_cj == 'ए' or r5_cj == 'गे' or r5_cj == 'ये':
+                if r5_cj== 'ता' or r5_cj_one =='ए' or r5_cj=='एं' or r5_cj=='ते' or r5_cj == 'या' or r5_cj == 'ईं' or r5_cj == 'थी' or r5_cj == 'ले' or r5_cj == 'हे' or r5_cj_one == 'ी' or r5_cj == 'खो' or r5_cj == 'है' or r5_cj == 'का' or r5_cj_one == 'ए' or r5_cj_one == 'ा' or r5_cj == 'गी' or r5_cj_one == 'गा' or r5_cj == 'ये' or r5_cj == 'आ' or r5_cj_one== 'ओ' or r5_cj_one == 'ई' or r5_cj == 'खा' or r5_cj == 'ए' or r5_cj == 'गे' or r5_cj == 'ये':
                     if l[k3-3] != 'QW' and l[k3-3]!='Adverb' and l[k3-3]!='NEG' and l[k3-3]!='Conjunct' and l[k3-3]!='Preposition' and l[k3-3]!='N' and l[k3-3]!='JJ' and l[k3-3]!='Place_N' :
                         l[k3-3] = 'VB'
                 split5(r6)
